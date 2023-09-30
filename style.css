@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --main-color: #55527C;
+    --dark-color: #130F49;
+    --yellow-color: #FF972D;
+    --blue-color: #A5A6FF;
+    --bg-color :#effbf8;
+    --font-inter: 'Inter', sans-serif;
+    --font-karla: 'Karla', sans-serif;
+    --font-kristi: 'Kristi', cursive;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Arrange .navbar and .main-profile side by side */
+    align-items: flex-start; /* Align content to the top */
+    justify-content: flex-start; /* Align content to the left */
+    height: 100vh;
+    overflow-x: hidden; /* Hide horizontal scrollbar for the whole page */
+}
+h1{
+    font-family: var(--font-karla);
+}
+span{
+    font-family: var(--font-karla);
+}
+
+ul li{
+    font-family: var(--font-karla);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    background-color: #fff;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    padding: 50px;    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 220px;
+    align-items: center;
+    
+}
+
+.user-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.user-img img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--blue-color);
+    object-fit: cover;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li:hover{
+    color: #A5A6FF;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.social svg{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.main-profile {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    flex-grow: 1; /* Allow .main-profile to take up remaining width */
+    height: 100vh; /* Maintain full height */
+    overflow-y: auto; /* Add vertical scrolling for overflowing content */
+    padding-left: 245px;
+}
+
+.main-content-container {
+    width: 100%; /* Allow the container to be 100% wide */
+    padding: 20px; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    
+}
+
+
+
+
+
+
